@@ -37,7 +37,7 @@ export const RegisterScreen = ({ navigation }: Props) => {
   };
 
   const handleRegister = (): void => {
-    if (registerForm.username == "" || registerForm.password == "") {
+    if (registerForm.username == "" || registerForm.password == "" || registerForm.name == "" || registerForm.email == "" || registerForm.phone == "") {
       Alert.alert("Error", "Por favor complete todos los campos.");
       return;
     }
